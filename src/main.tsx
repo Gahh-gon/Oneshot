@@ -5,9 +5,8 @@ import {Home} from './pages/Home'
 import { PagePersonagens } from './pages/PagePersonagens'
 import { PageBaixar } from './pages/PageBaixar'
 import { PageGameplay } from './pages/PageGameplay'
- import './styles/global.css'
 import ErrorPage from './errorPage'
-
+import './index.css'
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
