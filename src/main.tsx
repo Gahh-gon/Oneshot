@@ -7,6 +7,7 @@ import { PageBaixar } from './pages/PageBaixar'
 import { PageGameplay } from './pages/PageGameplay'
 import ErrorPage from './errorPage'
 import './index.css'
+import { App } from './pages/App'
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -14,10 +15,13 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     
       <BrowserRouter>
       <Routes>
-      <Route path='/'element={<Home/>} />
-      <Route path='/characters'element={<PagePersonagens/>}/>
-      <Route path='/downloadPage'element={<PageBaixar/>}/>
-      <Route path='/GameplayPage'element={<PageGameplay/>}/>
+      <Route path='/'element={<App/>} children={
+         <>
+         <Route path='/' element={<Home/>} />
+         <Route path='/characters' element={<PagePersonagens />} /><Route path='/downloadPage' element={<PageBaixar />} /><Route path='/GameplayPage' element={<PageGameplay />} />
+         </>
+      } />
+     
       <Route path="*" element={<ErrorPage />} />
       </Routes>
       </BrowserRouter>
