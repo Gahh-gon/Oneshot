@@ -1,0 +1,14 @@
+body{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    background: url('../../assets/ImagemDefundo1.svg')  no-repeat bottom center scroll;
+    background-size: cover;
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+   
+   
+}
