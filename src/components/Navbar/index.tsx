@@ -10,7 +10,7 @@ export function Navbar(){
                   </Link>
           
           
-            <ul className="flex space-x-2 md:space-x-6 lg:space-x-8 pr-10 text-white text-[10px] sm:text-sm md:text-base lg:text-xl xl:text-2xl">
+            <ul className="flex space-x-3 md:space-x-6 lg:space-x-8 pr-10 text-white text-[9px] sm:text-sm md:text-base lg:text-xl xl:text-2xl uppercase">
                 <li><Link to={"/characters"}>Personagens</Link></li>
                 <li><Link to={"/downloadPage"}>Baixar</Link></li>
                 <li><Link to={"/GameplayPage"}>Gameplay</Link></li>
