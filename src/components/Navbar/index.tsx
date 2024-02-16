@@ -5,7 +5,7 @@ export function Navbar(){
     return(
         <nav className="flex justify-between space-x-5 h-[100px] sticky top-0 shadow-lg z-10 items-center ">
 
-                  <Link to={'/'} className=" items-center flex ">
+                  <Link to='/' className=" items-center flex ">
                     <img src={LogoOneshot} alt="Imagem da lampada de oneshot que muitos tratam como sol " className="w-48 sm:w-52 md:w-60 lg:w-62 xl:w-72 2xl:80"/>
                   </Link>
           
