@@ -17,7 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Routes>
       <Route path='/'element={<App/>} children={
          <>
-         <Route path='/' element={<Home/>} />
+         <Route path='/Oneshot' element={<Home/>} />
          <Route path='/characters' element={<PagePersonagens />} /><Route path='/downloadPage' element={<PageBaixar/>} /><Route path='/GameplayPage' element={<PageGameplay />} />
          </>
       } />
