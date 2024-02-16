@@ -38,21 +38,6 @@ const router= createHashRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>   
-    
-      {/* <BrowserRouter>
-      <Routes>
-      <Route path='/'element={<App/>} children={
-         <>
-         <Route path='/Oneshot' element={<Home/>} />
-         <Route path='/characters' element={<PagePersonagens />} />
-         <Route path='/downloadPage' element={<PageBaixar/>} />
-         <Route path='/GameplayPage' element={<PageGameplay />} />
-         </>
-      } />
-     
-      <Route path="*" element={<ErrorPage />} />
-      </Routes>
-      </BrowserRouter> */}
 
       
 <RouterProvider router={router}/>
