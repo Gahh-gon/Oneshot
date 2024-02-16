@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import {Routes, Route, HashRouter} from 'react-router-dom'
 import {Home} from './pages/Home'
 import { PagePersonagens } from './pages/PagePersonagens'
 import { PageBaixar } from './pages/PageBaixar'
@@ -12,19 +12,22 @@ import { App } from './pages/App'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>   
-    
-      <BrowserRouter>
+    <HashRouter>
+
       <Routes>
       <Route path='/'element={<App/>} children={
          <>
-         <Route path='/Oneshot' element={<Home/>} />
+         <Route path='/' element={<Home/>} />
          <Route path='/characters' element={<PagePersonagens />} /><Route path='/downloadPage' element={<PageBaixar/>} /><Route path='/GameplayPage' element={<PageGameplay />} />
          </>
       } />
      
       <Route path="*" element={<ErrorPage />} />
       </Routes>
-      </BrowserRouter>
+      
+
+    </HashRouter>
+    
 
   </React.StrictMode>
 )
