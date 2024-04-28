@@ -12,3 +12,13 @@ body{
    
    
 }
+
+html ::-webkit-scrollbar {
+  width: 16px; 
+}
+html ::-webkit-scrollbar-thumb {
+  background: #eeff00cd; 
+}
+html ::-webkit-scrollbar-track {
+  background: #1d005d;
+}
